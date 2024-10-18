@@ -4,7 +4,8 @@ export const styles = {
     container:{
         backgroundColor: COLORS.white,
         flex: 1,
-        padding: 10
+        padding: 10,
+        marginTop: 25
     },
     text: {
         fontSize: FONT_SIZE.md,
