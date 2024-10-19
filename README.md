@@ -6,4 +6,11 @@ app de agendamento de serviços!
 ╰─npx create-expo-app --template
 ## Expo Cli
 ❯ npm install -g expo-cli
+
 ❯ npx expo start --tunnel
+
+❯ yarn add @react-navigation/native
+
+❯ npx expo install react-native-screens react-native-safe-area-context
+
+❯ yarn add @react-navigation/bottom-tabs
