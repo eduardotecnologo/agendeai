@@ -6,7 +6,9 @@ export const styles = {
         flex: 1,
         paddingLeft: 20,
         paddingRight: 20,
-        marginTop:20
+        marginTop:20,
+        justifyContent: "space-between",
+        marginBottom:20
     },
     theme:{
         backgroundColor: '#ffffff',
@@ -18,15 +20,10 @@ export const styles = {
         dayTextColor: '#2d4150',
         textDisabledColor: '#dd99ee'
     },
-    name: {
-        fontSize: FONT_SIZE.md,
-        color: COLORS.white,
+    hour: {
+        fontSize: FONT_SIZE.lg,
+        color: COLORS.gray2,
         fontWeight: "bold",
-        marginTop: 5
-    },
-    specialty: {
-        fontSize: FONT_SIZE.sm,
-        color: COLORS.white,
-        marginTop: 3
+        marginTop:20
     }
 }
