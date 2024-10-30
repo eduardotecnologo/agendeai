@@ -30,3 +30,7 @@ app de agendamento de serviços!
 ╰─ npm install cors
 
 ❯ node --watch src/index.js
+
+npm install pg
+
+npm install dotenv
