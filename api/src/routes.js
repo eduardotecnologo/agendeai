@@ -1,8 +1,8 @@
 import { Router } from "express";
 import controllerDoctor from "./controllers/controller.doctor.js";
+import controllerUser from "./controllers/controller.user.js";
 
  const router = Router();
-
 
  // Doctors
  router.get("/doctors",controllerDoctor.Listar);
@@ -12,5 +12,6 @@ import controllerDoctor from "./controllers/controller.doctor.js";
 
  // Users Account
  router.post("/users/register", controllerUser.Inserir);
+ router.post("/users/login", controllerUser.Login);
 
  export default router;

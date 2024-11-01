@@ -31,6 +31,8 @@ app de agendamento de serviços!
 
 ❯ node --watch src/index.js
 
-npm install pg
+❯ npm install pg
 
-npm install dotenv
+❯ npm install dotenv
+
+❯ npm install bcrypt

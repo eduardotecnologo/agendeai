@@ -1,9 +1,20 @@
-import controllerUser from "../services/service.user.js";
+import serviceUser from "../services/service.user.js";
 async function Inserir(req, res){
-    const { name, specialty, icon } = req.body;
-    const doctor = await serviceUser.Inserir(name, specialty, icon);
-    res.status(201).json(doctor);
+    const { name, email, password } = req.body;
+    const user = await serviceUser.Inserir(name, email, password);
+    res.status(201).json(user);
 }
 
-export default {Listar, Inserir, Editar, Excluir};
+async function Login(req, res){
+    const { email, password } = req.body;
+    const user = await serviceUser.Login(email, password);
+
+    if(user.length == 0){
+        res.status(401).json({error: "E-mail ou senha inválida"});
+    }else{
+        res.status(200).json(user);
+    }
+}
+
+export default {Inserir, Login};
 
