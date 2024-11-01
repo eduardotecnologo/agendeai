@@ -36,3 +36,5 @@ app de agendamento de serviços!
 ❯ npm install dotenv
 
 ❯ npm install bcrypt
+
+❯ npm install jsonwebtoken
