@@ -4,6 +4,11 @@ async function Listar(name){
     return doctors;
 }
 
+async function ListarServicos(id_doctor){
+    const serv = await repositoryDoctor.ListarServicos(id_doctor);
+    return serv;
+}
+
 async function Inserir(name, specialty, icon){
     const doctor = await repositoryDoctor.Inserir(name, specialty, icon);
     return doctor;
@@ -18,4 +23,4 @@ async function Excluir(id_doctor){
     const doctor = await repositoryDoctor.Excluir(id_doctor);
     return doctor;
 }
-export default {Listar, Inserir, Editar, Excluir};
+export default {Listar,ListarServicos, Inserir, Editar, Excluir};
